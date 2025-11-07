@@ -24,9 +24,9 @@ int main() {
     }
 
     if ((int)arm == copy)
-        printf("\nIt is an Armstrong Number.\n");
+        printf("\nIt is an Armstrong Number.");
     else
-        printf("\nIt is not an Armstrong Number.\n");
+        printf("\nIt is not an Armstrong Number.");
 
     return 0;
 }
