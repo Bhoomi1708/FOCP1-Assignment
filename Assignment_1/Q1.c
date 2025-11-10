@@ -4,7 +4,7 @@
 
 int main() {
     int num, rem, count = 0;
-    double arm = 0;  // can use double for safety with pow()
+    double arm = 0;  
     
     printf("\nEnter the number : ");
     scanf("%d", &num);
