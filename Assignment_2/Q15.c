@@ -1,32 +1,23 @@
 //Ques15
 #include <stdio.h>
-
 int main() {
-    int i, j;
-    int num;
-    int spaces = 12;  
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
 
-    for (i = 1; i <= 5; i++) {
-        num = 0;
+    int last = arr[n - 1]; 
 
-    for (j = 1; j <= i; j++) {
-            printf("%d", num);
-            num = 1 - num;
-        }
-      
-    for (j = 1; j <= spaces; j++) {
-            printf(" ");
-        }
-
-        num = 0;
-
-        for (j = 1; j <= i; j++) {
-            printf("%d", num);
-            num = 1 - num;
-        }
-
-        printf("\n");
-spaces -= 4;  
+    for (int i = n - 1; i > 0; i--)
+    {
+        arr[i] = arr[i - 1];
     }
+
+    arr[0] = last; 
+
+    printf("The new rotated Array: ");
+    for (int i = 0; i < n; i++) 
+    {
+        printf("%d ", arr[i]);
+    }
+
     return 0;
 }
