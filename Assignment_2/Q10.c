@@ -13,7 +13,7 @@ int main()
     if(m[j]== 99)
     count++;
     }
-    printf("count= %d", count);
+    printf("Number of students who scored 99 is %d", count);
 
     return 0;
 }
