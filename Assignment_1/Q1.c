@@ -2,7 +2,8 @@
 #include<stdio.h>
 #include<math.h>
 
-int main() {
+int main() 
+{
     int num, rem, count = 0;
     double arm = 0;  
     
@@ -11,13 +12,15 @@ int main() {
 
     int copy = num;  
     int temp = num;
-    while (temp > 0) {
+    while (temp > 0) 
+    {
         count++;
         temp = temp / 10;
     }
 
     temp = num;
-    while (temp > 0) {
+    while (temp > 0) 
+    {
         rem = temp % 10;
         arm = arm + ceil(pow(rem, count));  
         temp = temp / 10;
